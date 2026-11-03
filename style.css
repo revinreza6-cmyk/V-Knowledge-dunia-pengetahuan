@@ -1,0 +1,33 @@
+/* Background Meme */
+.meme-section {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 60px 20px;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+}
+
+/* Efek Gelap Background */
+.meme-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Konten di Atas Background */
+.meme-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.meme-title {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
